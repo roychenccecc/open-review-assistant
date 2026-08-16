@@ -1,0 +1,22 @@
+"""Freely redistributable synthetic demo items."""
+
+DEMO_ITEMS = [
+    {
+        "title": "Binary search invariant",
+        "prompt": "What condition must remain true while binary search narrows its range?",
+        "answer": "If the target exists, it remains inside the current candidate range.",
+        "tags": ["algorithms", "invariants"],
+    },
+    {
+        "title": "Database transaction",
+        "prompt": "What does atomicity guarantee in a database transaction?",
+        "answer": "The transaction's operations either all take effect or none do.",
+        "tags": ["databases"],
+    },
+    {
+        "title": "HTTP idempotency",
+        "prompt": "What makes an HTTP operation idempotent?",
+        "answer": "Repeating the same request has the same intended server effect as sending it once.",
+        "tags": ["web", "reliability"],
+    },
+]

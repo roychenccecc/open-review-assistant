@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-review-assistant"
+version = "0.1.0"
+description = "A local-first adaptive review engine with a CLI and MCP server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Roy Chen" }]
+keywords = ["spaced-repetition", "learning", "sqlite", "mcp", "privacy"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.scripts]
+open-review = "open_review_assistant.cli:main"
+open-review-mcp = "open_review_assistant.mcp_server:main"
+
+[project.urls]
+Repository = "https://github.com/roychenccecc/open-review-assistant"
+Issues = "https://github.com/roychenccecc/open-review-assistant/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
