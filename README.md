@@ -111,6 +111,24 @@ stdio, and logs are never written to stdout.
 Local-first is not the same as encrypted. Protect the device and database file
 according to the sensitivity of your material. See [SECURITY.md](SECURITY.md).
 
+## Roadmap
+
+This public core is extracted from a larger system that is used and improved
+continuously. Planned public milestones include:
+
+- Provider-agnostic AI generation of question variants that test the same
+  knowledge from different angles without copying private source material.
+- Source-linked web and semantic review to check generated items for factual
+  correctness, knowledge coverage, ambiguity, and unintended answer leakage.
+- Reproducible evaluation fixtures for variant quality, prompt injection, and
+  answer-safety regressions.
+- Expanded MCP tools for orchestrating generation, verification, review, and
+  weak-point analysis while keeping durable learner data local.
+
+These capabilities will be added behind explicit interfaces so the scheduling
+core remains inspectable, offline-capable, and independent of any single model
+provider.
+
 ## Development
 
 ```bash
